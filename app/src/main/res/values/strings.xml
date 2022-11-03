@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Alma_App</string>
+    <string name="recuperar"><u>¿Olvidaste tu contraseña?</u></string>
+    <string name="correo">Correo</string>
+    <string name="password">Contraseña</string>
+    <string name="iniciarsesion">Iniciar Sesión</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="restablecerpassword">Restablecer contraseña</string>
+    <string name="newpassword">Contraseña nueva</string>
+    <string name="confirmnewpassword">Confirmar contraseña</string>
+    <string name="ingresarcodigo">Ingresar código</string>
+    <string name="confirmarcorreo">Confirmar correo</string>
+    <string name="enviarcodigo">Enviar código</string>
+    <string name="registro">Registro</string>
+    <string name="ciudad">Ciudad</string>
+    <string name="direccion">Dirección</string>
+    <string name="telefono">Teléfono</string>
+</resources>

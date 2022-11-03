@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- en el bombillo se pone data binding layout para correr la animacion -->
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+    <!-- se cambia a RelativeLayout para dar comodidad al momento de programar
+    poder controlar el tamaño de la animacion -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.ui.activities.MainActivity"
+        android:background="@color/purple_light">
+
+        <!-- se instancia la animacion
+        id
+        alignParentBottom para alinear la animacion
+        lottie_loop para que se ejecute en el momento que yo quiera
+        lottie_autoPlay para que corra de manera automatica
+        lottie_rawRes se indica la animacion que se va a correr-->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/view_animation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/womenanimation" >
+
+        </com.airbnb.lottie.LottieAnimationView>
+    </RelativeLayout>
+</layout>

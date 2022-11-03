@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.activities.RecuperarActivity"
+    android:background="@color/purple_light">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="347dp"
+        android:layout_height="272dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="602dp"
+        app:srcCompat="@drawable/logoflorabajo" />
+
+    <ImageView
+        android:id="@+id/Refondo"
+        android:layout_width="347dp"
+        android:layout_height="272dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="288dp"
+        android:background="@drawable/fondoblanco"
+        android:backgroundTint="#7CD9DCE0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="540dp"
+        android:gravity="center"
+        android:text="@string/restablecerpassword"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/ReAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="355dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="462dp"
+        android:background="@drawable/styloredondo_text"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:fontFamily="@font/opensanslight"
+        android:hint="@string/correo"
+        android:inputType="textEmailAddress"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/ReConfirmAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="417dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="400dp"
+        android:background="@drawable/styloredondo_text"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:fontFamily="@font/opensanslight"
+        android:hint="@string/confirmarcorreo"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/ReEnviarCodigo"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="496dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="320dp"
+        android:background="@drawable/styloredondo_button"
+        android:fontFamily="@font/opensanslight"
+        android:text="@string/enviarcodigo"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/yellow_button" />
+
+</RelativeLayout>

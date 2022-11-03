@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.activities.IngresoCodigoActivity"
+    android:background="@color/purple_light">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="207dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="602dp"
+        app:srcCompat="@drawable/logoflorabajo" />
+
+    <TextView
+        android:id="@+id/Infondo"
+        android:layout_width="wrap_content"
+        android:layout_height="240dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="288dp"
+        android:background="@drawable/fondoblanco"
+        android:backgroundTint="#7CD9DCE0" />
+
+    <TextView
+        android:id="@+id/InPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="355dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="462dp"
+        android:background="@drawable/styloredondo_text"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:fontFamily="@font/opensanslight"
+        android:hint="@string/newpassword"
+        android:inputType="textPassword"
+        android:textSize="18sp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/InIngresarCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="496dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="320dp"
+        android:background="@drawable/styloredondo_button"
+        android:backgroundTint="#CDFFFB6F"
+        android:fontFamily="@font/opensanslight"
+        android:gravity="center"
+        android:hint="@string/ingresarcodigo"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/InConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="417dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="400dp"
+        android:background="@drawable/styloredondo_text"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:fontFamily="@font/opensanslight"
+        android:hint="@string/confirmnewpassword"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="540dp"
+        android:gravity="center"
+        android:text="@string/restablecerpassword"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</RelativeLayout>
