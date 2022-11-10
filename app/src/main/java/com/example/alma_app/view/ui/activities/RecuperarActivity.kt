@@ -19,5 +19,7 @@ class RecuperarActivity : AppCompatActivity() {
         enviarCodigoButton.setOnClickListener {
             startActivity(Intent(this, IngresoCodigoActivity::class.java))
         }
+
     }
+
 }

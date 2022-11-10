@@ -3,7 +3,7 @@
     <!-- stroke para el estilo del editext-->
     <!-- si quiero que sea el fondo es con badground -->
     <stroke
-        android:color="@color/yellow_button"
+        android:color="@color/white"
         android:width="1sp">
     </stroke>
     <padding

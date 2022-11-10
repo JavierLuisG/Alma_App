@@ -7,4 +7,6 @@
     <color name="gris_borde">#7CD9DCE0</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="purple">#E27BED</color>
+    <color name="gris_dark">#7C77797A</color>
 </resources>

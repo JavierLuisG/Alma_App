@@ -14,7 +14,7 @@ class IngresoCodigoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ingreso_codigo)
 
-        ingresarCodigoButton = findViewById(R.id.InIngresarCodigo)
+        ingresarCodigoButton = findViewById(R.id.InConfirmar)
 
         ingresarCodigoButton.setOnClickListener {
             startActivity(Intent(this,LoginActivity::class.java))

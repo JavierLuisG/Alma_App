@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_grafo"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.alma_app.view.ui.fragments.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_tiendaFragment"
+            app:destination="@id/tiendaFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_favoritosFragment"
+            app:destination="@id/favoritosFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_carritoFragment"
+            app:destination="@id/carritoFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_ubicacionFragment"
+            app:destination="@id/ubicacionFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_atencionClienteFragment"
+            app:destination="@id/atencionClienteFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_sobreNosotrosFragment"
+            app:destination="@id/sobreNosotrosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tiendaFragment"
+        android:name="com.example.alma_app.view.ui.fragments.TiendaFragment"
+        android:label="fragment_tienda"
+        tools:layout="@layout/fragment_tienda" >
+        <action
+            android:id="@+id/action_tiendaFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_tiendaFragment_to_carritoFragment"
+            app:destination="@id/carritoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritosFragment"
+        android:name="com.example.alma_app.view.ui.fragments.FavoritosFragment"
+        android:label="fragment_favoritos"
+        tools:layout="@layout/fragment_favoritos" />
+    <fragment
+        android:id="@+id/carritoFragment"
+        android:name="com.example.alma_app.view.ui.fragments.CarritoFragment"
+        android:label="fragment_carrito"
+        tools:layout="@layout/fragment_carrito" />
+    <fragment
+        android:id="@+id/ubicacionFragment"
+        android:name="com.example.alma_app.view.ui.fragments.UbicacionFragment"
+        android:label="fragment_ubicacion"
+        tools:layout="@layout/fragment_ubicacion" />
+    <fragment
+        android:id="@+id/atencionClienteFragment"
+        android:name="com.example.alma_app.view.ui.fragments.AtencionClienteFragment"
+        android:label="fragment_atencion_cliente"
+        tools:layout="@layout/fragment_atencion_cliente" />
+    <fragment
+        android:id="@+id/sobreNosotrosFragment"
+        android:name="com.example.alma_app.view.ui.fragments.SobreNosotrosFragment"
+        android:label="fragment_sobre_nosotros"
+        tools:layout="@layout/fragment_sobre_nosotros" />
+</navigation>

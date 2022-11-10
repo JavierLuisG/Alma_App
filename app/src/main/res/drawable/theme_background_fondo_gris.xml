@@ -3,7 +3,7 @@
     <!-- stroke para el estilo del editext-->
     <!-- si quiero que sea el fondo es con badground -->
     <stroke
-        android:color="@color/white"
+        android:color="@color/gris_borde"
         android:width="1sp">
     </stroke>
     <padding
@@ -17,8 +17,9 @@
 
     </corners>
     <gradient
-        android:centerColor="@color/white"
-        android:endColor="@color/white"
-        android:startColor="@color/white"
-        />
+        android:centerColor="@color/gris_dark"
+        android:endColor="@color/gris_dark"
+        android:startColor="@color/gris_dark"
+        android:angle="45">
+    </gradient>
 </shape>
