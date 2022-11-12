@@ -2,101 +2,100 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.ui.activities.RecuperarActivity"
     android:background="@drawable/theme_gradients_background">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="334dp"
-        android:layout_height="226dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logonegroalma"  />
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="1">
 
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="226dp"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/logonegroalma">
+            </ImageView>
 
-    <TextView
-        android:id="@+id/textRestablecerpassword"
-        android:layout_width="280dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/opensanslight"
-        android:gravity="center"
-        android:text="@string/restablecerpassword"
-        android:textColor="@color/black"
-        android:textSize="25dp"
-        android:textStyle="bold"
+            <TextView
+                android:id="@+id/textRestablecerpassword"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/opensanslight"
+                android:gravity="center"
+                android:text="@string/restablecerpassword"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold">
+            </TextView>
 
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Refondo"
+                android:layout_width="335dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="@color/gris_dark">
 
-    <ImageView
-        android:id="@+id/Refondo"
-        android:layout_width="335dp"
-        android:layout_height="230dp"
-        android:background="@drawable/theme_background_fondo_gris"
+                <TextView
+                    android:id="@+id/ReAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/styloredondo_text"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/opensanslight"
+                    android:hint="@string/correo"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:inputType="textEmailAddress">
+                </TextView>
 
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textRestablecerpassword"
-        app:layout_constraintVertical_bias="0.0" />
+                <EditText
+                    android:id="@+id/ReConfirmAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="85dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/styloredondo_text"
+                    android:backgroundTint="@color/white"
+                    android:hint="@string/confirmarcorreo"
+                    android:fontFamily="@font/opensanslight"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:inputType="textEmailAddress">
+                </EditText>
 
-    <TextView
-        android:id="@+id/ReAddress"
-        android:layout_width="240dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="25dp"
-        android:background="@drawable/styloredondo_text"
-        android:backgroundTint="@color/white"
-        android:fontFamily="@font/opensanslight"
-        android:hint="@string/correo"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:inputType="textEmailAddress"
+                <Button
+                    android:id="@+id/ReEnviarCodigo"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="155dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="25dp"
+                    android:backgroundTint="@color/purple_dark"
+                    android:fontFamily="@font/opensanslight"
+                    android:text="@string/enviarcodigo"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    android:textStyle="bold"/>
 
-        app:layout_constraintEnd_toEndOf="@+id/Refondo"
-        app:layout_constraintStart_toStartOf="@+id/Refondo"
-        app:layout_constraintTop_toTopOf="@+id/Refondo" />
+            </androidx.cardview.widget.CardView>
 
-    <EditText
-        android:id="@+id/ReConfirmAddress"
-        android:layout_width="240dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/styloredondo_text"
-        android:backgroundTint="@color/white"
-        android:hint="@string/confirmarcorreo"
-        android:fontFamily="@font/opensanslight"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:inputType="textEmailAddress"
+        </GridLayout>
 
-        app:layout_constraintEnd_toEndOf="@id/Refondo"
-        app:layout_constraintStart_toStartOf="@id/Refondo"
-        app:layout_constraintTop_toBottomOf="@id/ReAddress"/>
-
-    <Button
-        android:id="@+id/ReEnviarCodigo"
-        android:layout_width="270dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="25dp"
-        android:backgroundTint="@color/purple_dark"
-        android:fontFamily="@font/opensanslight"
-        android:text="@string/enviarcodigo"
-        android:textColor="@color/white"
-        android:textSize="22dp"
-        android:textStyle="bold"
-
-        app:layout_constraintEnd_toEndOf="@id/Refondo"
-        app:layout_constraintStart_toStartOf="@id/Refondo"
-        app:layout_constraintTop_toBottomOf="@id/ReConfirmAddress" />
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

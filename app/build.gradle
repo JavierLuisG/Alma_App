@@ -57,6 +57,8 @@ dependencies {
     implementation 'com.google.android.material:material:1.7.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+
     //se agrega la siguiente libreria por el archivo json que es de animacion
     implementation 'com.airbnb.android:lottie:3.4.2'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'

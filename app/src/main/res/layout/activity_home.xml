@@ -19,20 +19,16 @@
         app:navGraph="@navigation/nav_grafo">
     </fragment>
 
-    <LinearLayout
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/Menu_bottom_navigation"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/nav_host_fragment">
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/Menu_bottom_navigation"
-            style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:menu="@menu/nav_menu_bar"
-            android:background="@color/black" />
-
-    </LinearLayout>
+        android:layout_height="56dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/nav_host_fragment"
+        app:menu="@menu/nav_menu_bar"
+        tools:layout_editor_absoluteX="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

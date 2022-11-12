@@ -41,6 +41,26 @@
 
         </LinearLayout>
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="56dp"
+            android:layout_marginTop="10dp">
+        </ScrollView>
+
+        <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/Carrito_bottom_navigation"
+                style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:menu="@menu/nav_menu_bar"
+                android:background="@color/black"/>
+        </LinearLayout> -->
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

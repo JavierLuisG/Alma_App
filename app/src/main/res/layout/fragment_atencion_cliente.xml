@@ -31,11 +31,11 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="@string/atencion_al_cliente"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:fontFamily="@font/opensanslight"
                 android:textSize="25dp"
-                android:background="@color/purple_dark"
+                android:background="@color/gris_borde"
                 android:layout_marginTop="10dp">
             </TextView>
 
@@ -44,18 +44,19 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="10dp">
+            android:layout_height="613dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="0dp">
 
             <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:alignmentMode="alignMargins"
-                android:columnCount="1"
-                >
+                android:columnCount="1">
             </GridLayout>
 
         </ScrollView>
+
 
 
     </LinearLayout>

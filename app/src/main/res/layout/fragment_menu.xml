@@ -53,7 +53,8 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="56dp"
             android:layout_marginTop="10dp">
 
             <GridLayout
@@ -70,17 +71,17 @@
                     android:layout_rowWeight="1"
                     android:layout_columnWeight="1"
                     android:layout_margin="12dp"
-                    android:layout_marginRight="20dp"
                     android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="5dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:background="@color/purple_dark"
                         android:gravity="center"
-                        android:orientation="vertical"
-                        android:background="@color/purple_dark">
+                        android:orientation="vertical">
                         <!--android:padding="16dp"-->
 
                         <ImageView
@@ -112,17 +113,17 @@
                     android:layout_rowWeight="1"
                     android:layout_columnWeight="1"
                     android:layout_margin="12dp"
-                    android:layout_marginRight="20dp"
                     android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="5dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:background="@color/purple_dark"
                         android:gravity="center"
-                        android:orientation="vertical"
-                        android:background="@color/purple_dark">
+                        android:orientation="vertical">
 
                         <ImageView
                             android:id="@+id/imagenFavoritos"
@@ -153,17 +154,17 @@
                     android:layout_rowWeight="1"
                     android:layout_columnWeight="1"
                     android:layout_margin="12dp"
-                    android:layout_marginRight="20dp"
                     android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="5dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:background="@color/purple_dark"
                         android:gravity="center"
-                        android:orientation="vertical"
-                        android:background="@color/purple_dark">
+                        android:orientation="vertical">
 
                         <ImageView
                             android:id="@+id/imagenCarrito"
@@ -194,17 +195,17 @@
                     android:layout_rowWeight="1"
                     android:layout_columnWeight="1"
                     android:layout_margin="12dp"
-                    android:layout_marginRight="20dp"
                     android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="5dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:background="@color/purple_dark"
                         android:gravity="center"
-                        android:orientation="vertical"
-                        android:background="@color/purple_dark">
+                        android:orientation="vertical">
 
                         <ImageView
                             android:id="@+id/imagenUbicacion"
@@ -235,17 +236,17 @@
                     android:layout_rowWeight="1"
                     android:layout_columnWeight="1"
                     android:layout_margin="12dp"
-                    android:layout_marginRight="20dp"
                     android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="5dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:background="@color/purple_dark"
                         android:gravity="center"
-                        android:orientation="vertical"
-                        android:background="@color/purple_dark">
+                        android:orientation="vertical">
 
                         <ImageView
                             android:id="@+id/imagenAtencionCliente"
@@ -276,17 +277,17 @@
                     android:layout_rowWeight="1"
                     android:layout_columnWeight="1"
                     android:layout_margin="12dp"
-                    android:layout_marginRight="20dp"
                     android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="5dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:background="@color/purple_dark"
                         android:gravity="center"
-                        android:orientation="vertical"
-                        android:background="@color/purple_dark">
+                        android:orientation="vertical">
 
                         <ImageView
                             android:id="@+id/imagenSobreNosotros"
@@ -314,6 +315,20 @@
             </GridLayout>
 
         </ScrollView>
+
+        <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/Menu_bottom_navigation"
+                style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:menu="@menu/nav_menu_bar"
+                android:background="@color/black"
+                />
+        </LinearLayout> -->
 
     </LinearLayout>
 

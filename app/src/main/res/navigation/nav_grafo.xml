@@ -45,25 +45,73 @@
         android:id="@+id/favoritosFragment"
         android:name="com.example.alma_app.view.ui.fragments.FavoritosFragment"
         android:label="fragment_favoritos"
-        tools:layout="@layout/fragment_favoritos" />
+        tools:layout="@layout/fragment_favoritos" >
+        <action
+            android:id="@+id/action_favoritosFragment_to_tiendaFragment"
+            app:destination="@id/tiendaFragment" />
+
+        <action
+            android:id="@+id/action_favoritosFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_favoritosFragment_to_carritoFragment"
+            app:destination="@id/carritoFragment" />
+    </fragment>
     <fragment
         android:id="@+id/carritoFragment"
         android:name="com.example.alma_app.view.ui.fragments.CarritoFragment"
         android:label="fragment_carrito"
-        tools:layout="@layout/fragment_carrito" />
+        tools:layout="@layout/fragment_carrito" >
+        <action
+            android:id="@+id/action_carritoFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_carritoFragment_to_tiendaFragment"
+            app:destination="@id/tiendaFragment" />
+    </fragment>
     <fragment
         android:id="@+id/ubicacionFragment"
         android:name="com.example.alma_app.view.ui.fragments.UbicacionFragment"
         android:label="fragment_ubicacion"
-        tools:layout="@layout/fragment_ubicacion" />
+        tools:layout="@layout/fragment_ubicacion" >
+        <action
+            android:id="@+id/action_ubicacionFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_ubicacionFragment_to_carritoFragment"
+            app:destination="@id/carritoFragment" />
+        <action
+            android:id="@+id/action_ubicacionFragment_to_tiendaFragment"
+            app:destination="@id/tiendaFragment" />
+    </fragment>
     <fragment
         android:id="@+id/atencionClienteFragment"
         android:name="com.example.alma_app.view.ui.fragments.AtencionClienteFragment"
         android:label="fragment_atencion_cliente"
-        tools:layout="@layout/fragment_atencion_cliente" />
+        tools:layout="@layout/fragment_atencion_cliente" >
+        <action
+            android:id="@+id/action_atencionClienteFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_atencionClienteFragment_to_carritoFragment"
+            app:destination="@id/carritoFragment" />
+        <action
+            android:id="@+id/action_atencionClienteFragment_to_tiendaFragment"
+            app:destination="@id/tiendaFragment" />
+    </fragment>
     <fragment
         android:id="@+id/sobreNosotrosFragment"
         android:name="com.example.alma_app.view.ui.fragments.SobreNosotrosFragment"
         android:label="fragment_sobre_nosotros"
-        tools:layout="@layout/fragment_sobre_nosotros" />
+        tools:layout="@layout/fragment_sobre_nosotros" >
+        <action
+            android:id="@+id/action_sobreNosotrosFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_sobreNosotrosFragment_to_carritoFragment"
+            app:destination="@id/carritoFragment" />
+        <action
+            android:id="@+id/action_sobreNosotrosFragment_to_tiendaFragment"
+            app:destination="@id/tiendaFragment" />
+    </fragment>
 </navigation>
