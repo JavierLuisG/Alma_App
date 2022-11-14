@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.navigation.fragment.findNavController
 import com.example.alma_app.R
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MenuFragment : Fragment() {
 
@@ -45,6 +46,17 @@ class MenuFragment : Fragment() {
         val cardSobreNosotros = view.findViewById<ImageView>(R.id.imagenSobreNosotros)
         cardSobreNosotros.setOnClickListener {
             findNavController().navigate(R.id.action_menuFragment_to_sobreNosotrosFragment)
+        }
+
+        // esto es para el button navigation bar
+        super.onViewCreated(view, savedInstanceState)
+        val btm = view.findViewById<BottomNavigationView>(R.id.Tienda_bottom_navigation)
+        btm.setOnNavigationItemReselectedListener {
+            when(it.itemId){
+                R.id.Map -> findNavController().navigate(R.id.action_menuFragment_to_ubicacionFragment)
+                R.id.Store -> findNavController().navigate(R.id.action_menuFragment_to_tiendaFragment)
+                R.id.Car -> findNavController().navigate(R.id.action_menuFragment_to_carritoFragment)
+            }
         }
     }
 }

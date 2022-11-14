@@ -17,21 +17,25 @@ class TiendaAdapter: RecyclerView.Adapter<TiendaAdapter.ViewHolder>() {
         var itemImage: ImageView
         var itemTitle: TextView
         var itemPrecio: TextView
+        var itemMaterial: TextView
 
         init {
             itemImage = ItemView.findViewById(R.id.image)
             itemTitle = ItemView.findViewById(R.id.txtTitulo)
             itemPrecio = ItemView.findViewById(R.id.txtPrecio)
+            itemMaterial = ItemView.findViewById(R.id.txtMaterial)
         }
     }
     val titles = arrayOf("Enterizo azul", "Enterizo flores", "Leggings azul", "Leggings morado", "Short negro", "Top marrón", "Top rosa")
     val precio = arrayOf("$85.000", "$85.000", "$40.000", "$40.000", "$35.000", "$35.000", "$35.000")
     val image = arrayOf(R.drawable.productenterizoazul, R.drawable.productenterizoflores,R.drawable.productleggingsazul,R.drawable.productleggingsmorado,R.drawable.productshortnegro,R.drawable.producttopmarron,R.drawable.producttoprosa)
+    val material = arrayOf("Licra", "Licra", "Licra", "Licra", "Licra", "Licra", "Licra")
 
     override fun onBindViewHolder(viewHolder: ViewHolder, i: Int) {
         viewHolder.itemTitle.text=titles[i]
         viewHolder.itemPrecio.text=precio[i]
         viewHolder.itemImage.setImageResource(image[i])
+        viewHolder.itemMaterial.text=material[i]
     }
 
     override fun getItemCount(): Int {

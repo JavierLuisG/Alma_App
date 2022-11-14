@@ -26,16 +26,11 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        // en las dos siguientes lineas se agrega el binding y el set cambia porque falta definir la linea
-        // de ejecucion de procesos por ejemplo, de esta actividad se activa otra y esta activa esta o esta y asi sucesivamente
-        // binding = ActivityMainBinding.inflate(layoutInflater)
-        // setContentView(binding.root)
-
         setContentView(R.layout.activity_login)
 
         firebaseAuth = Firebase.auth
-        val email= findViewById<EditText>(R.id.Loginaddress)
-        val password= findViewById<EditText>(R.id.Loginpassword)
+        val email = findViewById<EditText>(R.id.Loginaddress)
+        val password = findViewById<EditText>(R.id.Loginpassword)
 
         // permite indicar cual es la relacion entre la var y el id del boton en login
         iniciarButton = findViewById(R.id.Biniciar)
@@ -45,8 +40,9 @@ class LoginActivity : AppCompatActivity() {
         // permite que se asocien con un click... setOnClickListener siempre se utiliza cuando queremos dar un click
         iniciarButton.setOnClickListener {
             // pasa lo mismo que en el registro, la persona da click en insiar se llama a loginStart
-            //startActivity(Intent(this, HomeActivity::class.java))
+            // startActivity(Intent(this, HomeActivity::class.java))
             loginStart(email.text.toString(),password.text.toString())
+
         }
         registrarButton.setOnClickListener {
             startActivity(Intent(this, RegistroActivity::class.java))
@@ -59,11 +55,13 @@ class LoginActivity : AppCompatActivity() {
     fun loginStart(email:String,password:String){
         firebaseAuth.signInWithEmailAndPassword(email,password)
             .addOnCompleteListener(this){
-                Task-> if(Task.isSuccessful){
+                Task-> if (Task.isSuccessful){
                 startActivity(Intent(this, HomeActivity::class.java))
                 }else{
-                    Toast.makeText(baseContext,"Error",Toast.LENGTH_LONG).show()
+                    Toast.makeText(baseContext, "Intente de nuevo", Toast.LENGTH_LONG).show()
                 }
             }
     }
+
+
 }

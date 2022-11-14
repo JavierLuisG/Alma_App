@@ -29,15 +29,16 @@ class TiendaFragment : Fragment() {
         return view
     }
 
-    /*override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val btm = view.findViewById<BottomNavigationView>(R.id.Tienda_bottom_navigation)
         btm.setOnNavigationItemReselectedListener {
             when(it.itemId){
-                R.id.nav_menu-> findNavController().navigate(R.id.action_tiendaFragment_to_menuFragment)
-                R.id.nav_carrito -> findNavController().navigate(R.id.action_tiendaFragment_to_carritoFragment)
+                R.id.Menu -> findNavController().navigate(R.id.action_tiendaFragment_to_menuFragment)
+                R.id.Map -> findNavController().navigate(R.id.action_tiendaFragment_to_ubicacionFragment)
+                R.id.Car -> findNavController().navigate(R.id.action_tiendaFragment_to_carritoFragment)
             }
         }
-    }*/
+    }
 
 }

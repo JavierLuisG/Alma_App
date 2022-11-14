@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".view.ui.fragments.FavoritosFragment">
 
     <LinearLayout
@@ -44,22 +44,22 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="56dp">
+            android:layout_marginBottom="60dp">
         </ScrollView>
 
-        <!-- <LinearLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <com.google.android.material.bottomnavigation.BottomNavigationView
-                android:id="@+id/AtencionCliente_bottom_navigation"
+                android:id="@+id/Favoritos_bottom_navigation"
                 style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:menu="@menu/nav_menu_bar"
                 android:background="@color/black" />
 
-        </LinearLayout> -->
+        </LinearLayout>
 
     </LinearLayout>
 

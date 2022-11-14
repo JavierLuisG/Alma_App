@@ -46,7 +46,7 @@
                 app:cardBackgroundColor="@color/gris_dark">
 
                 <TextView
-                    android:id="@+id/ReAddress"
+                    android:id="@+id/RestablecerAddress"
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
                     android:layout_marginTop="25dp"
@@ -62,7 +62,7 @@
                 </TextView>
 
                 <EditText
-                    android:id="@+id/ReConfirmAddress"
+                    android:id="@+id/RestablecerConfirmAddress"
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
                     android:layout_marginTop="85dp"

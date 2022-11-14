@@ -40,6 +40,9 @@
         <action
             android:id="@+id/action_tiendaFragment_to_carritoFragment"
             app:destination="@id/carritoFragment" />
+        <action
+            android:id="@+id/action_tiendaFragment_to_ubicacionFragment"
+            app:destination="@id/ubicacionFragment" />
     </fragment>
     <fragment
         android:id="@+id/favoritosFragment"
@@ -56,6 +59,9 @@
         <action
             android:id="@+id/action_favoritosFragment_to_carritoFragment"
             app:destination="@id/carritoFragment" />
+        <action
+            android:id="@+id/action_favoritosFragment_to_ubicacionFragment"
+            app:destination="@id/ubicacionFragment" />
     </fragment>
     <fragment
         android:id="@+id/carritoFragment"
@@ -68,6 +74,9 @@
         <action
             android:id="@+id/action_carritoFragment_to_tiendaFragment"
             app:destination="@id/tiendaFragment" />
+        <action
+            android:id="@+id/action_carritoFragment_to_ubicacionFragment"
+            app:destination="@id/ubicacionFragment" />
     </fragment>
     <fragment
         android:id="@+id/ubicacionFragment"
@@ -98,6 +107,9 @@
         <action
             android:id="@+id/action_atencionClienteFragment_to_tiendaFragment"
             app:destination="@id/tiendaFragment" />
+        <action
+            android:id="@+id/action_atencionClienteFragment_to_ubicacionFragment"
+            app:destination="@id/ubicacionFragment" />
     </fragment>
     <fragment
         android:id="@+id/sobreNosotrosFragment"
@@ -113,5 +125,8 @@
         <action
             android:id="@+id/action_sobreNosotrosFragment_to_tiendaFragment"
             app:destination="@id/tiendaFragment" />
+        <action
+            android:id="@+id/action_sobreNosotrosFragment_to_ubicacionFragment"
+            app:destination="@id/ubicacionFragment" />
     </fragment>
 </navigation>

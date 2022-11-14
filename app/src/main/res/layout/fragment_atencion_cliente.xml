@@ -44,9 +44,9 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="613dp"
+            android:layout_height="match_parent"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="0dp">
+            android:layout_marginBottom="60dp">
 
             <GridLayout
                 android:layout_width="match_parent"
@@ -57,7 +57,14 @@
 
         </ScrollView>
 
-
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/AtencionCliente_bottom_navigation"
+            style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu="@menu/nav_menu_bar"
+            android:background="@color/black"
+            />
 
     </LinearLayout>
 
